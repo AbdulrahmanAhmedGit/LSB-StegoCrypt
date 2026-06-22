@@ -49,7 +49,6 @@ def main():
         try:
             extracted_bits = decode_image(img_path)
             res = recover_message(extracted_bits, password)
-            print(decode_image(img_path))
             if res == 'Wrong Password':
                 print(f"\n{RED}{BOLD}[❌ Error] Wrong Password! Decryption failed.{RESET}\n")
             else:

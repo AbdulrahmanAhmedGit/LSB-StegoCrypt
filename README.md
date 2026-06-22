@@ -1,6 +1,6 @@
 # LSB-StegoCrypt
 
-#### Video URL: <>
+#### Video URL: [Youtube Video](https://youtu.be/W-jwMfX0uwg?si=oXtRAB1aplFhzy2f)
 
 ## Description
 This project is a Command-Line Interface (CLI) application developed in Python for **CS50P (CS50's Introduction to Programming with Python)**. It implements secure **Least Significant Bit (LSB) Steganography** combined with robust **Fernet (AES-128) Symmetric Encryption** and `zlib` data compression.
