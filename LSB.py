@@ -59,7 +59,7 @@ def main():
 
 def prepare_data(data, password):
     if not data or not password:
-        sys.exit('\n{RED}{BOLD}[❌ Error] Missing data{RESET}')
+        sys.exit(f'\n{RED}{BOLD}[❌ Error] Missing data{RESET}')
     password_byte = password.encode('utf-8')
     sha256_hash = hashlib.sha256(password_byte).digest()
     fernet_key = base64.urlsafe_b64encode(sha256_hash)
