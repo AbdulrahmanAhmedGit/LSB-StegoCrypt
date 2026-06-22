@@ -91,7 +91,7 @@ def encode_image(image, coded_data, output):
     if ava_b < len(coded_data):
         raise ValueError("Image size is not suitable for the message")
     
-    old_pixles = list(img.get_flattened_data())
+    old_pixles = list(img.getdata())
     new_pixles = []
     pointer = 0
 
@@ -131,7 +131,7 @@ def decode_image(image):
     except FileNotFoundError:
         sys.exit(f'\n{RED}{BOLD}[❌ Error] File is not found{RESET}')
     img = img.convert('RGB')
-    pixles = list(img.get_flattened_data())
+    pixles = list(img.getdata())
 
     binary_data = ''
     limit = '0000000000000000'
